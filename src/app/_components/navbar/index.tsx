@@ -1,9 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 "use client";
 import { useState } from "react";
-import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
+// import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import { ClashDisplay } from "@/fonts";
+import { HamburgerMenuIcon, Cross2Icon } from "@radix-ui/react-icons";
 interface NavItem {
   label: string;
   href: string;
@@ -22,7 +23,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full bg-transparent bg-opacity-80 shadow-md backdrop-blur-md ${ClashDisplay.className} text-green-300`}
+      className={`fixed top-0 w-full bg-transparent bg-opacity-80 shadow-md backdrop-blur-md ${ClashDisplay.className} text-white`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
         <div className="flex items-center justify-between py-4">
@@ -38,7 +39,7 @@ const Navbar: React.FC = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="text-xl"
             >
-              {isOpen ? <CloseOutlined /> : <MenuOutlined />}
+              {isOpen ? <Cross2Icon /> : <HamburgerMenuIcon />}
             </button>
           </div>
 
@@ -48,7 +49,7 @@ const Navbar: React.FC = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-gray-700 hover:text-blue-500"
+                className={`hover:text-deepBlue`}
               >
                 {item.label}
               </Link>
@@ -59,7 +60,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="bg-white md:hidden">
+        <div className={`md:hidden`}>
           <div className="flex flex-col items-center space-y-4 py-4">
             {navItems.map((item) => (
               <Link

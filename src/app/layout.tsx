@@ -1,10 +1,11 @@
 import "~/styles/globals.css";
 import { Poppins } from "@/fonts";
 import { type Metadata } from "next";
-
+import "@radix-ui/themes/styles.css";
+import { Theme } from "@radix-ui/themes";
 import { TRPCReactProvider } from "~/trpc/react";
 import Navbar from "./_components/navbar";
-import { AntdRegistry } from "@ant-design/nextjs-registry";
+import Footer from "./_components/Footer";
 
 export const metadata: Metadata = {
   title: "Soiree",
@@ -19,12 +20,13 @@ export default function RootLayout({
     <html lang="en">
       {/* eslint-disable-next-line @typescript-eslint/no-unsafe-member-access */}
       <body className={`${Poppins.className}`}>
-        <AntdRegistry>
+        <Theme accentColor="brown" radius="full">
           <TRPCReactProvider>
             <Navbar />
             <div className="bg-red-500 pt-16">{children}</div>
+            <Footer />
           </TRPCReactProvider>
-        </AntdRegistry>
+        </Theme>
       </body>
     </html>
   );
