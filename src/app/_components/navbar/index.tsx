@@ -60,13 +60,13 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className={`md:hidden`}>
-          <div className="flex flex-col items-center space-y-4 py-4">
+        <div className={`h-dvh md:hidden`}>
+          <div className="flex h-4/5 flex-col items-center justify-evenly space-y-4 py-4">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-gray-700 hover:text-blue-500"
+                className="hover:text-deepBlue"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
