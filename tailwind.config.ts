@@ -14,6 +14,9 @@ export default {
         green: "",
         white: "#FFF",
       },
+      backgroundImage: {
+        "hero-image": "url('/images/home-hero.png')",
+      },
     },
   },
   plugins: [],

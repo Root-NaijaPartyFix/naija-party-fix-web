@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 .radix-themes {
+  /* Colors */
   --my-brand-color: #c1121f;
   --brown-9: var(--my-brand-color);
   --brown-a9: var(--my-brand-color);
+
+  /* Fonts */
+  --heading-font-family: "ClashDisplay";
 }
