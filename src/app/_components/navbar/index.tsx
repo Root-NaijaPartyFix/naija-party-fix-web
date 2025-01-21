@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
             <button
               aria-label="Toggle menu"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-xl"
+              className="text-xl text-brown"
             >
               {isOpen ? <Cross2Icon /> : <HamburgerMenuIcon />}
             </button>
@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`hover:text-deepBlue`}
+                className={`hover:text-brown`}
               >
                 {item.label}
               </Link>
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className="hover:text-deepBlue"
+                className="hover:text-brown"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}

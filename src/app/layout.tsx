@@ -23,7 +23,7 @@ export default function RootLayout({
         <Theme accentColor="brown" radius="full">
           <TRPCReactProvider>
             <Navbar />
-            <div className="bg-red-500 pt-16">{children}</div>
+            <div className="">{children}</div>
             <Footer />
           </TRPCReactProvider>
         </Theme>
