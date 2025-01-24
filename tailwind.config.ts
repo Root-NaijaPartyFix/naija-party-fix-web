@@ -15,7 +15,7 @@ export default {
         white: "#FFF",
       },
       backgroundImage: {
-        "hero-image": "url('/images/home-hero.png')",
+        "hero-image": "url('/images/Home/home-hero.png')",
       },
     },
   },
