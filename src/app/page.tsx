@@ -221,7 +221,7 @@ export default async function Home() {
                 Book Your Tasting session or Discuss Your Project
               </Text>
               <hr color="white" className="w-2/6" />
-              <ReusableButton className="rounded-full bg-white text-[16px] font-medium text-brown">
+              <ReusableButton className="rounded-full bg-white px-[2.5rem] py-[.5rem] text-[16px] font-medium text-brown md:px-[4rem] md:py-[.7rem]">
                 BOOK YOUR DATE
               </ReusableButton>
             </Flex>
@@ -265,7 +265,7 @@ export default async function Home() {
             <Text as={"p"} weight={"bold"} my={"1rem"}>
               Call us now +234-5678-789-90 Or request for a quote
             </Text>
-            <ReusableButton className="rounded-full bg-brown text-[16px] font-medium text-white">
+            <ReusableButton className="rounded-full bg-brown px-[2.5rem] py-[.5rem] text-[16px] font-medium text-white md:px-[4rem] md:py-[.7rem]">
               REQUEST A QUOTE
             </ReusableButton>
           </Flex>
@@ -312,7 +312,7 @@ export default async function Home() {
             <Text as={"p"} weight={"bold"} my={"1rem"}>
               Call us now +234-5678-789-90 Or request for a quote
             </Text>
-            <ReusableButton className="rounded-full bg-brown text-[16px] font-medium text-white">
+            <ReusableButton className="rounded-full bg-brown px-[2.5rem] py-[.5rem] text-[16px] font-medium text-white md:px-[4rem] md:py-[.7rem]">
               REQUEST A QUOTE
             </ReusableButton>
           </Flex>
