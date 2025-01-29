@@ -15,12 +15,12 @@ function ProductPage() {
           {/* Featured Venture */}
 
           <div className="mx-auto mt-[5rem] w-[90%] border-2 border-gray-500 px-[] py-[3rem]">
-            <div className="flex flex-col items-center justify-center gap-[1rem] border-2 bg-transparent">
+            <div className="flex flex-col items-center justify-center gap-[1rem] bg-transparent">
               <div>
                 <h2 className="text-[1.5rem] font-bold">Featured Vendors</h2>
               </div>
 
-              <div className="m-auto flex w-full flex-col justify-center gap-[1.5rem] border-2 border-red-500 text-start sm:w-[80%] sm:flex-row">
+              <div className="relative -z-10 m-auto flex w-full flex-col justify-center gap-[1.5rem] text-start sm:w-[80%] sm:flex-row">
                 {Array.from({ length: 3 }).map((_, idx) => (
                   <div
                     key={idx}
@@ -51,15 +51,15 @@ function ProductPage() {
           </div>
 
           {/*  */}
-          <div className="mx-auto mt-[5rem] w-[90%] border-2 border-gray-500 px-[] py-[3rem]">
-            <div className="flex flex-col items-center justify-center gap-[1rem] border-2 bg-transparent">
+          <div className="mx-auto mb-[5rem] mt-[5rem] w-[90%] border-2 border-gray-500 px-[] py-[3rem]">
+            <div className="flex flex-col items-center justify-center gap-[1rem] bg-transparent">
               <div>
                 <h2 className="text-[1.5rem] font-bold">
                   Top Vendors by Category
                 </h2>
               </div>
 
-              <div className="m-auto flex w-full flex-col justify-center gap-[1.5rem] border-2 border-red-500 text-start sm:w-[80%] sm:flex-row">
+              <div className="relative -z-10 m-auto flex w-full flex-col justify-center gap-[1.5rem] text-start sm:w-[80%] sm:flex-row">
                 {Array.from({ length: 3 }).map((_, idx) => (
                   <div
                     key={idx}

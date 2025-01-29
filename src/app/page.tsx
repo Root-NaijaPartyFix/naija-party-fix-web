@@ -112,7 +112,7 @@ export default async function Home() {
 
             {/* Four images */}
             <Grid
-              className="w-auto gap-3"
+              className="relative -z-10 w-auto gap-3"
               style={{
                 gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
                 gridTemplateRows: "repeat(2, 1fr)",
@@ -124,7 +124,7 @@ export default async function Home() {
                 // style={{ aspectRatio: "2 / 1" }}
               >
                 <Image
-                  src={"/images/Home/coperate.png"}
+                  src={"/images/Home/wedding.png"}
                   alt="Image 1"
                   className="object-cover"
                   fill
@@ -142,7 +142,7 @@ export default async function Home() {
                 style={{ aspectRatio: "2 / 1" }}
               >
                 <Image
-                  src={"/images/Home/parties.png"}
+                  src={"/images/Home/coperate.png"}
                   alt="Image 1"
                   className="object-cover"
                   fill
@@ -161,7 +161,7 @@ export default async function Home() {
                 style={{ aspectRatio: "1 / 1" }}
               >
                 <Image
-                  src={"/images/Home/social-event.png"}
+                  src={"/images/Home/parties.png"}
                   alt="Image 1"
                   className="object-cover"
                   fill
@@ -179,7 +179,7 @@ export default async function Home() {
                 style={{ aspectRatio: "1 / 1" }}
               >
                 <Image
-                  src={"/images/Home/wedding.png"}
+                  src={"/images/Home/social-event.png"}
                   alt="Image 1"
                   className="object-cover"
                   fill
