@@ -1,5 +1,6 @@
 import "~/styles/globals.css";
 import { Poppins } from "@/fonts";
+import { ClashDisplay } from "@/fonts";
 import { type Metadata } from "next";
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
@@ -19,7 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* eslint-disable-next-line @typescript-eslint/no-unsafe-member-access */}
-      <body className={`${Poppins.className}`}>
+      <body
+        className={`${Poppins.className}${ClashDisplay.className} font-clashDisplay`}
+      >
         <Theme accentColor="brown" radius="full">
           <TRPCReactProvider>
             <Navbar />

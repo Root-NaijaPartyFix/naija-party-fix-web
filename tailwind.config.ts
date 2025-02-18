@@ -7,6 +7,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ["var(--font-geist-sans)", ...fontFamily.sans],
+        poppins: ["Poppins", ...fontFamily.sans],
+        clashDisplay: ["Clash Display", ...fontFamily.sans],
       },
       colors: {
         brown: "#C1121F",

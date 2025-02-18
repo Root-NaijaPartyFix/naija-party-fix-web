@@ -3,23 +3,9 @@
 @tailwind utilities;
 
 .radix-themes {
-  /* Colors */
   --my-brand-color: #c1121f;
   --brown-9: var(--my-brand-color);
   --brown-a9: var(--my-brand-color);
 
-  /* Fonts */
   --heading-font-family: "ClashDisplay";
 }
-
-/* .image-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-  grid-template-rows: repeat(2, 1fr) !important;
-}
-
-@media (max-width: 768px) {
-  .image-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-} */

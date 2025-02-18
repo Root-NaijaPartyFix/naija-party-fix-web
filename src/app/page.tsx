@@ -7,40 +7,39 @@ import ReusableButton from "../components/Button";
 const CustomerSatifaction = [
   {
     icon: "/icons/Home/icon-1.svg",
-    title: "Best   Chef",
+    title: "Best Chef",
     texts:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nesciunt consectetur ex iusto maxime libero aliquid quasi non tempore quo.",
+      " Our Best Chef brings years of culinary experience to the table, ensuring every dish is a masterpiece. Trust us to deliver meals that are as artful as they are delicious.",
   },
 
   {
     icon: "/icons/Home/icon-2.svg",
-    title: "Delicious  Meal",
+    title: "Delicious Meal",
     texts:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nesciunt consectetur ex iusto maxime libero aliquid quasi non tempore quo.",
+      " Every delicious meal is prepared with fresh, high-quality ingredients to satisfy your cravings. We guarantee a flavorful dining experience that will leave you coming back for more.",
   },
   {
     icon: "/icons/Home/icon-3.svg",
-    title: "Seasonal  Menus",
+    title: "Seasonal Menus",
     texts:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nesciunt consectetur ex iusto maxime libero aliquid quasi non tempore quo.",
+      " Our seasonal menus are thoughtfully curated to showcase the freshest flavors of each season. Experience a variety of dishes tailored to bring out the best in every ingredient.",
   },
   {
     icon: "/icons/Home/icon-4.svg",
-    title: "Delicious  Meal",
+    title: "High Quality Services",
     texts:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nesciunt consectetur ex iusto maxime libero aliquid quasi non tempore quo.",
+      " We pride ourselves on delivering high-quality services to every guest, ensuring an exceptional dining experience. From preparation to presentation, our team goes above and beyond to meet your expectations.",
   },
   {
     icon: "/icons/Home/icon-5A.svg",
-    title: "Delicious  Meal",
-    texts:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nesciunt consectetur ex iusto maxime libero aliquid quasi non tempore quo.",
+    title: "Local Sourced Ingredients",
+    texts: " We provide specialized services to enhance and support events.",
   },
   {
     icon: "/icons/Home/icon-6.svg",
-    title: "Delicious  Meal",
+    title: "Fits Your Budget",
     texts:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nesciunt consectetur ex iusto maxime libero aliquid quasi non tempore quo.",
+      "Enjoy fine dining that fits your budget without sacrificing taste or quality. We believe great food should be accessible to everyone at an affordable price.",
   },
 ];
 
@@ -69,20 +68,20 @@ const Staffs = [
 
 const HomeRatings = [
   {
-    num: "1000",
-    doings: "Wedding Vendeor",
+    num: "200",
+    doings: "Wedding Vendors",
   },
   {
-    num: "1000+",
-    doings: "Wedding Vendeor",
+    num: "100+",
+    doings: "Annual Weddings",
   },
   {
-    num: "1,000",
-    doings: "Wedding Vendeor",
+    num: "50+",
+    doings: "Wedding Venues",
   },
   {
-    num: "100",
-    doings: "Wedding Vendeor",
+    num: "100+",
+    doings: "Full-time Employees",
   },
 ];
 
@@ -94,7 +93,6 @@ export default async function Home() {
       <HeroSection />
 
       <Container maxWidth={"1380px"}>
-        {/* Heading */}
         <Box>
           <div className="mx-auto mb-[5rem] mt-[2rem] w-[90%]">
             <Heading
@@ -157,13 +155,13 @@ export default async function Home() {
                 </Text>
               </div>
               <div
-                className="relative col-span-1 row-span-1"
+                className="relative col-span-1 row-span-1 pr-1"
                 style={{ aspectRatio: "1 / 1" }}
               >
                 <Image
                   src={"/images/Home/parties.png"}
                   alt="Image 1"
-                  className="object-cover"
+                  className="-ml-1 object-cover"
                   fill
                 />
                 <Text
@@ -181,7 +179,7 @@ export default async function Home() {
                 <Image
                   src={"/images/Home/social-event.png"}
                   alt="Image 1"
-                  className="object-cover"
+                  className="-ml-1 object-cover"
                   fill
                 />
                 <Text
@@ -208,7 +206,7 @@ export default async function Home() {
                 as="p"
                 weight={"medium"}
                 style={{ color: "white" }}
-                className="md:text-[20px]"
+                className="md:text-[23px]"
               >
                 BOOK TODAY!
               </Text>
@@ -221,7 +219,7 @@ export default async function Home() {
                 Book Your Tasting session or Discuss Your Project
               </Text>
               <hr color="white" className="w-2/6" />
-              <ReusableButton className="rounded-full bg-white px-[2.5rem] py-[.5rem] text-[16px] font-medium text-brown md:px-[4rem] md:py-[.7rem]">
+              <ReusableButton className="rounded-full border bg-white px-[2.5rem] py-[.5rem] text-[16px] font-medium text-brown transition-all hover:border-white hover:bg-brown hover:text-white md:px-[4rem] md:py-[.7rem]">
                 BOOK YOUR DATE
               </ReusableButton>
             </Flex>
@@ -240,7 +238,8 @@ export default async function Home() {
             <p className="my-2 font-medium md:text-[20px]">Why Soiree</p>
             <h2 className="text-[1.5rem] font-bold sm:text-[1.5rem] md:text-[2rem]">
               {" "}
-              Satisfaction <br /> Guaranteed
+              Satisfaction <br />{" "}
+              <span className="text-brown"> Guaranteed</span>
             </h2>
             <div className="mb-[3rem] mt-7 flex flex-col flex-wrap items-center justify-center gap-7 text-center sm:flex-row md:mb-[4rem]">
               {CustomerSatifaction.map((data, i) => {
@@ -256,7 +255,7 @@ export default async function Home() {
                       height={50}
                       width={50}
                     />
-                    <p className="text-[16px] font-bold">Best chef</p>
+                    <p className="text-[16px] font-bold">{data.title}</p>
                     <p className="text-[13px] text-gray-400">{data.texts}</p>
                   </div>
                 );
@@ -265,7 +264,7 @@ export default async function Home() {
             <Text as={"p"} weight={"bold"} my={"1rem"}>
               Call us now +234-5678-789-90 Or request for a quote
             </Text>
-            <ReusableButton className="rounded-full bg-brown px-[2.5rem] py-[.5rem] text-[16px] font-medium text-white md:px-[4rem] md:py-[.7rem]">
+            <ReusableButton className="rounded-full border bg-brown px-[2.5rem] py-[.5rem] text-[16px] font-medium text-white transition-all hover:border-brown hover:bg-white hover:text-brown md:px-[4rem] md:py-[.7rem]">
               REQUEST A QUOTE
             </ReusableButton>
           </Flex>
@@ -312,7 +311,7 @@ export default async function Home() {
             <Text as={"p"} weight={"bold"} my={"1rem"}>
               Call us now +234-5678-789-90 Or request for a quote
             </Text>
-            <ReusableButton className="rounded-full bg-brown px-[2.5rem] py-[.5rem] text-[16px] font-medium text-white md:px-[4rem] md:py-[.7rem]">
+            <ReusableButton className="rounded-full border bg-brown px-[2.5rem] py-[.5rem] text-[16px] font-medium text-white transition-all hover:border-brown hover:bg-white hover:text-brown md:px-[4rem] md:py-[.7rem]">
               REQUEST A QUOTE
             </ReusableButton>
           </Flex>
@@ -350,8 +349,7 @@ export default async function Home() {
                 <div className="flex flex-col text-start">
                   <div className="mb-[1rem] w-full border-b-2 border-gray-400"></div>
                   <p className="text-[16px] font-bold">
-                    Culinary creativity : The Signature dishes for soiree has
-                    been labelled ......
+                    Events Planning Pitfalls to Avoid: Planning an event......
                   </p>
                   <p className="text-[15px] text-gray-400">
                     Culinary creativity : The Signature dishes for soiree has
@@ -361,12 +359,11 @@ export default async function Home() {
                 <div className="flex flex-col text-start">
                   <div className="mb-[1rem] w-full border-b-2 border-gray-400"></div>
                   <p className="text-[16px] font-bold">
-                    Culinary creativity : The Signature dishes for soiree has
-                    been labelled ......
+                    Soiree is the best and most most affordable vendor......
                   </p>
                   <p className="text-[15px] text-gray-400">
                     Culinary creativity : The Signature dishes for soiree has
-                    been labelled by public as best.
+                    been labelled by public as .
                   </p>
                 </div>
               </div>
