@@ -1,6 +1,5 @@
 import { Container } from "@radix-ui/themes";
 import Card from "~/components/Card";
-
 export default function MyComponent() {
   return (
     <Container maxWidth={"1380px"}>
@@ -114,8 +113,7 @@ export default function MyComponent() {
         <h2 className="mb-[2rem] text-[2rem] font-bold">Latest Insights</h2>
 
         <div className="mb-[5rem] flex flex-wrap justify-center gap-6">
-          {/* Generate 6 Cards */}
-          <Card className="bg-[#000000]" length={3} />
+          <Card selectedFilter="All" num={3} />
         </div>
       </div>
     </Container>
