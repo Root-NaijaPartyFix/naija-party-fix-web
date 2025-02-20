@@ -1,10 +1,34 @@
+"use client";
+
 import { Container } from "@radix-ui/themes";
 import Image from "next/image";
+import { useState } from "react";
 import Card from "~/components/Card";
+
+const filterBtn = [
+  {
+    id: 1,
+    text: "All",
+  },
+
+  {
+    id: 2,
+    text: "Catering",
+  },
+  {
+    id: 3,
+    text: "Decorations",
+  },
+  {
+    id: 4,
+    text: "Photography",
+  },
+];
 const BlogPage = () => {
+  const [selectedFilter, setSelectedFilter] = useState("All");
   return (
     <Container maxWidth={"1380px"}>
-      <div className="relative mb-[5rem] h-[60vh] w-full">
+      <div className="relative -z-10 mb-[5rem] h-[60vh] w-full">
         {/* Hero Image */}
         <Image
           src="/images/blog/hero.png"
@@ -30,22 +54,23 @@ const BlogPage = () => {
       </div>
 
       {/* Child Divs */}
-      <div className="mb-[2rem] flex flex-col gap-4 p-4 sm:flex-row">
-        {/* Child Divs */}
-        {Array.from({ length: 5 }, (_, index) => (
-          <div
-            key={index}
-            className="w-full rounded-md border-2 border-red-500 p-3"
+      <div className="mb-[2rem] flex justify-center gap-4 overflow-x-auto border border-b-gray-200 border-t-gray-200 p-2 shadow-sm">
+        {filterBtn.map(({ id, text }) => (
+          <button
+            key={id}
+            onClick={() => setSelectedFilter(text)}
+            className={`rounded-md border-2 border-red-500 p-2 ${
+              selectedFilter === text ? "bg-red-500 text-white" : ""
+            }`}
           >
-            <p className="text-center">This is div {index + 1}</p>
-          </div>
+            <p className="text-center">{text}</p>
+          </button>
         ))}
       </div>
 
       {/*  */}
       <div className="mb-[5rem] flex flex-wrap justify-center gap-6">
-        {/* Generate 6 Cards */}
-        <Card className="bg-brown" length={6} />
+        <Card selectedFilter={selectedFilter} />
       </div>
 
       {/*  */}

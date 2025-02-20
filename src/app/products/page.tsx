@@ -24,19 +24,19 @@ function ProductPage() {
                 {Array.from({ length: 3 }).map((_, idx) => (
                   <div
                     key={idx}
-                    className="flex h-[300px] w-full flex-col justify-between sm:w-1/3"
+                    className="flex h-[300px] w-full flex-col justify-between gap-1 rounded-md shadow-md sm:w-1/3"
                   >
                     {/* Image container */}
-                    <div className="relative h-[80%]">
+                    <div className="relative -z-10 h-[80%]">
                       <Image
                         src="/images/product/featured-cake-1.jpg"
                         alt={`Image ${idx + 1}`}
-                        className="object-cover"
+                        className="rounded-tl-md rounded-tr-md object-cover"
                         layout="fill"
                       />
                     </div>
                     {/* Text container */}
-                    <div className="flex h-[20%] flex-col justify-center gap-y-1 px-2">
+                    <div className="mb-2 flex h-[20%] flex-col justify-center gap-y-1 px-2">
                       <p className="text-[11px] text-gray-400">
                         Photography by Alex
                       </p>
@@ -63,19 +63,19 @@ function ProductPage() {
                 {Array.from({ length: 3 }).map((_, idx) => (
                   <div
                     key={idx}
-                    className="flex w-full flex-row items-center justify-center gap-[1rem] sm:w-1/3 sm:flex-col"
+                    className="flex w-full flex-row items-center justify-center gap-2 rounded-md shadow-md sm:w-1/3 sm:flex-col"
                   >
                     {/* Image container */}
-                    <div className="relative h-[150px] w-[150px]">
+                    <div className="relative -z-10 h-[150px] w-[150px]">
                       <Image
                         src="/images/product/featured-cake-1.jpg"
                         alt={`Image ${idx + 1}`}
-                        className="object-cover"
+                        className="rounded-tl-md rounded-tr-md object-cover"
                         layout="fill"
                       />
                     </div>
                     {/* Text container */}
-                    <div className="flex flex-col justify-center gap-y-1 px-2 text-center">
+                    <div className="mb-2 flex flex-col justify-center gap-y-1 px-2 text-center">
                       <p className="text-[14px] font-bold">
                         Photography by Alex
                       </p>
