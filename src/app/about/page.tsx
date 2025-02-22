@@ -54,7 +54,6 @@ const page = () => {
               <div
                 key={id}
                 className="flex w-full flex-col gap-3 border-blue-500 px-6 py-4 sm:w-[48%] lg:w-[30%]"
-                // className="flex w-full max-w-[13rem] flex-col gap-3 border border-blue-500 sm:w-[48%] lg:w-[30%]"
               >
                 <h3 className="break-words text-center text-2xl font-bold">
                   {title}
@@ -66,7 +65,7 @@ const page = () => {
           </div>
 
           {/* Third component */}
-          <div className="flex flex-wrap items-center justify-center gap-7 p-6 lg:flex-nowrap">
+          <div className="flex flex-wrap items-center justify-center gap-7 p-[5px] sm:p-6 lg:flex-nowrap">
             {/* Text Container */}
             <div className="flex max-w-lg flex-col gap-5 text-center">
               <h2 className="text-2xl font-bold text-[#C1121F]">
@@ -97,25 +96,25 @@ const page = () => {
           </div>
 
           {/* Fourt component */}
-          <div className="-z-20 flex h-[250px] w-full sm:h-[300px] md:h-[400px] lg:h-[600px]">
+          <div className="-z-20 flex h-[250px] w-full p-[5px] sm:h-[300px] sm:p-0 md:h-[400px] lg:h-[600px]">
             {/* Left Column - Two Images */}
             <div className="flex w-1/3 flex-col gap-4">
               <div className="relative flex-1">
                 <Image
                   src="/images/about/img5.png"
                   alt="Image 1"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
+                  sizes="100%"
+                  fill
+                  className="rounded-lg object-cover"
                 />
               </div>
               <div className="relative flex-1">
                 <Image
                   src="/images/about/img4.png"
                   alt="Image 2"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
+                  sizes="100%"
+                  fill
+                  className="rounded-lg object-cover"
                 />
               </div>
             </div>
@@ -126,35 +125,33 @@ const page = () => {
                 <Image
                   src="/images/about/img6.png"
                   alt="Image 3"
-                  layout="fill"
-                  // width={300}
-                  // height={300}
-                  objectFit="cover"
-                  className="rounded-lg"
+                  sizes="100%"
+                  fill
+                  className="rounded-lg object-cover"
                 />
               </div>
             </div>
           </div>
 
-          <div className="-z-20 mb-[5rem] flex h-[250px] flex-row-reverse sm:h-[300px] md:h-[400px] lg:h-[600px]">
+          <div className="-z-20 mb-[5rem] flex h-[250px] flex-row-reverse p-[5px] sm:h-[300px] sm:px-0 md:h-[400px] lg:h-[600px]">
             {/* Left Column - Two Images */}
             <div className="flex w-1/3 flex-col gap-4">
               <div className="relative flex-1">
                 <Image
                   src="/images/about/img3.png"
                   alt="Image 1"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
+                  sizes="100%"
+                  fill
+                  className="rounded-lg object-cover"
                 />
               </div>
               <div className="relative flex-1">
                 <Image
                   src="/images/about/img2.png"
                   alt="Image 2"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
+                  sizes="100%"
+                  fill
+                  className="rounded-lg object-cover"
                 />
               </div>
             </div>
@@ -165,18 +162,16 @@ const page = () => {
                 <Image
                   src="/images/about/img1.png"
                   alt="Image 3"
-                  layout="fill"
-                  // width={300}
-                  // height={300}
-                  objectFit="cover"
-                  className="rounded-lg"
+                  sizes="100%"
+                  fill
+                  className="rounded-lg object-cover"
                 />
               </div>
             </div>
           </div>
 
           {/* Testimonoes */}
-          <div className="mb-[5rem] flex flex-col items-center justify-center border border-gray-700 sm:p-6">
+          <div className="mb-[5rem] flex flex-col items-center justify-center border pb-5 sm:p-6 sm:pb-0">
             <h1 className="my-[1rem] text-3xl font-bold">
               Customer&nbsp;<span className="text-[#C1121F]">Reviews</span>
             </h1>

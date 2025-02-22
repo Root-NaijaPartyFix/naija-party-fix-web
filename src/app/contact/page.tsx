@@ -1,5 +1,6 @@
 import { Container } from "@radix-ui/themes";
 import Card from "~/components/Card";
+
 export default function MyComponent() {
   return (
     <Container maxWidth={"1380px"}>
@@ -112,8 +113,8 @@ export default function MyComponent() {
       <div className="justify-center text-center">
         <h2 className="mb-[2rem] text-[2rem] font-bold">Latest Insights</h2>
 
-        <div className="mb-[5rem] flex flex-wrap justify-center gap-6">
-          <Card selectedFilter="All" num={3} />
+        <div className="mb-[5rem] flex h-fit flex-wrap justify-center gap-6">
+          <Card num={3} selectedFilter="All" />
         </div>
       </div>
     </Container>
