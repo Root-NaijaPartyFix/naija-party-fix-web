@@ -9,3 +9,10 @@
 
   --heading-font-family: "ClashDisplay";
 }
+
+/* global.css */
+:root {
+  --primary-color: #c1121f; /* brown */
+  --primary-hover: #a10f19; /* brown deeeper*/
+  --secondary-color: #60a5fa;
+}

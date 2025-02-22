@@ -126,6 +126,7 @@ export default async function Home() {
                   alt="Image 1"
                   className="object-cover"
                   fill
+                  sizes="100%"
                 />
                 <Text
                   className="absolute bottom-5 left-1/2 -translate-x-1/2 transform text-center text-white"
@@ -143,6 +144,7 @@ export default async function Home() {
                   src={"/images/Home/coperate.png"}
                   alt="Image 1"
                   className="object-cover"
+                  sizes="100%"
                   fill
                 />
 
@@ -162,6 +164,7 @@ export default async function Home() {
                   src={"/images/Home/parties.png"}
                   alt="Image 1"
                   className="-ml-1 object-cover"
+                  sizes="100%"
                   fill
                 />
                 <Text
@@ -180,6 +183,7 @@ export default async function Home() {
                   src={"/images/Home/social-event.png"}
                   alt="Image 1"
                   className="-ml-1 object-cover"
+                  sizes="100%"
                   fill
                 />
                 <Text
