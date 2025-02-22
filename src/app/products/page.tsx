@@ -34,7 +34,8 @@ function ProductPage() {
                         src="/images/product/featured-cake-1.jpg"
                         alt={`Image ${idx + 1}`}
                         className="rounded-tl-md rounded-tr-md object-cover"
-                        layout="fill"
+                        fill
+                        sizes="100%"
                       />
                     </div>
                     {/* Text container */}
@@ -73,7 +74,8 @@ function ProductPage() {
                         src="/images/product/featured-cake-1.jpg"
                         alt={`Image ${idx + 1}`}
                         className="rounded-tl-md rounded-tr-md object-cover"
-                        layout="fill"
+                        fill
+                        sizes="100%"
                       />
                     </div>
                     {/* Text container */}
