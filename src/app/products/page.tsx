@@ -1,6 +1,6 @@
 import { Box, Container } from "@radix-ui/themes";
 import React from "react";
-import HeroSection from "~/components/HomeHeroSection";
+import HeroSection from "~/app/_components/Home/HomeHeroSection";
 import { Poppins } from "../styles/fonts";
 import Image from "next/image";
 

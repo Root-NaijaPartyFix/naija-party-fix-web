@@ -1,7 +1,7 @@
 import { Container } from "@radix-ui/themes";
 import Image from "next/image";
 import React from "react";
-import ReusableButton from "~/components/Button";
+import ReusableButton from "~/app/_components/Button";
 
 const page = () => {
   const Works = [
