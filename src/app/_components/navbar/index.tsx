@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full bg-transparent bg-opacity-80 shadow-md backdrop-blur-md ${ClashDisplay.className} text-white`}
+      className={`fixed top-0 w-full bg-transparent bg-opacity-80 shadow-md backdrop-blur-md ${ClashDisplay.className} z-50 text-white`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
         <div className="flex items-center justify-between py-4">

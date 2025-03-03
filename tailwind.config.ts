@@ -14,6 +14,7 @@ export default {
         brown: "#C1121F",
         deepBlue: "#0C2637",
         white: "#FFF",
+        lightGray: "#D9D9D9",
       },
       backgroundImage: {
         "hero-image": "url('/images/Home/home-hero.png')",

@@ -77,4 +77,84 @@ export const HomeDatas = {
       doings: "Full-time Employees",
     },
   ],
+  Vendors: [
+    {
+      id: 1,
+      img: "/images/Home/photo.png",
+      title: "Photographers",
+      text: "View portfolios and reviews",
+    },
+    {
+      id: 2,
+      img: "/images/Home/florist.png",
+
+      title: "Florists",
+      text: "Find the perfect floral arrangements",
+    },
+    {
+      id: 3,
+      img: "/images/Home/catering.png",
+
+      title: "Photographers",
+      text: "Delicious cakes and desserts for your event",
+    },
+  ],
+  EventPlan: [
+    {
+      id: 1,
+      img: "/images/Home/chef.png",
+      title: "Choosing the Right Caterer",
+      text: "Explore different cuisines and tasting options.",
+    },
+    {
+      id: 2,
+      img: "/images/Home/table.png",
+      title: "Venue Selection",
+      text: "Consider capacity, location, and ambiance.",
+    },
+  ],
+};
+
+export const ProductDatas = {
+  Categories: [
+    {
+      id: 1,
+      img: "/images/product/categoryimg1.png",
+      title: "Music",
+      text: "Live bands, DJs, and more",
+    },
+    {
+      id: 2,
+      img: "/images/product/categoryimg1.png",
+
+      title: "Catering",
+      text: "Delicious cuisines for every taste",
+    },
+    {
+      id: 3,
+      img: "/images/product/categoryimg1.png",
+      title: "Photography",
+      text: "Capture every moment with skilled photographers",
+    },
+  ],
+  ServicePackage: [
+    {
+      id: 1,
+      title: "Standard",
+      nums: 10,
+      price: "N 500K",
+    },
+    {
+      id: 2,
+      title: "Premium",
+      nums: 15,
+      price: "N 700K",
+    },
+    {
+      id: 3,
+      title: "Gold",
+      nums: 30,
+      price: "N 1M",
+    },
+  ],
 };

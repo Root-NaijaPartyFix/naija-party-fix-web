@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       {/* eslint-disable-next-line @typescript-eslint/no-unsafe-member-access */}
       <body
-        className={`${Poppins.className}${ClashDisplay.className} font-clashDisplay`}
+        className={`${Poppins.className}${ClashDisplay.className} h-screen w-full font-clashDisplay`}
       >
         <Theme accentColor="brown" radius="full">
           <TRPCReactProvider>

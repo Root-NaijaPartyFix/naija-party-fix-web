@@ -3,17 +3,32 @@ import React from "react";
 import HeroSection from "~/app/_components/Home/HomeHeroSection";
 import { Poppins } from "../styles/fonts";
 import Image from "next/image";
+import Category from "../_components/Product/Category";
+import Service from "../_components/Product/Service";
+import TrustIndicator from "../_components/Product/TrustIndicator";
+import RecentProject from "../_components/Product/RecentProject";
+import PlanForm from "../_components/Product/PlanForm";
 
 function ProductPage() {
   return (
-    <div className="">
+    <div className="to-[#0C2637]/7 bg-gradient-to-b from-[#0C2637]">
       {/* Herosection */}
       <Box as="div" className={`${Poppins.className}`}>
-        <HeroSection />
+        {/* <HeroSection /> */}
 
         <Container maxWidth={"1380px"} px={"10px"}>
           {/* Featured Venture */}
 
+          <Category />
+
+          <Service />
+
+          <TrustIndicator />
+
+          <RecentProject />
+
+          <PlanForm />
+          {/* 
           <div className="mx-auto mt-[1rem] w-[100%] border-0 py-[3rem] sm:mt-[5rem] sm:border-2">
             <div className="flex flex-col items-center justify-center gap-[1rem] bg-transparent">
               <div>
@@ -28,7 +43,6 @@ function ProductPage() {
                     key={idx}
                     className="flex h-[300px] w-full flex-col justify-between gap-1 rounded-md shadow-md sm:w-1/3"
                   >
-                    {/* Image container */}
                     <div className="relative -z-10 h-[80%]">
                       <Image
                         src="/images/product/featured-cake-1.jpg"
@@ -38,7 +52,6 @@ function ProductPage() {
                         sizes="100%"
                       />
                     </div>
-                    {/* Text container */}
                     <div className="mb-2 flex h-[20%] flex-col justify-center gap-y-1 px-2">
                       <p className="text-[11px] text-gray-400">
                         Photography by Alex
@@ -53,7 +66,6 @@ function ProductPage() {
             </div>
           </div>
 
-          {/*  */}
           <div className="mx-auto mb-[5rem] mt-[0] w-[100%] border-0 py-[3rem] sm:mt-[5rem] sm:border-2">
             <div className="flex flex-col items-center justify-center gap-[1rem] bg-transparent">
               <div>
@@ -68,7 +80,6 @@ function ProductPage() {
                     key={idx}
                     className="flex w-full flex-row items-center justify-center gap-2 rounded-md shadow-md hover:bg-gray-300 sm:w-1/3 sm:flex-col"
                   >
-                    {/* Image container */}
                     <div className="relative -z-10 h-[150px] w-[150px]">
                       <Image
                         src="/images/product/featured-cake-1.jpg"
@@ -78,7 +89,6 @@ function ProductPage() {
                         sizes="100%"
                       />
                     </div>
-                    {/* Text container */}
                     <div className="mb-2 flex flex-col justify-center gap-y-1 px-2 text-center">
                       <p className="text-[14px] font-bold">
                         Photography by Alex
@@ -91,7 +101,7 @@ function ProductPage() {
                 ))}
               </div>
             </div>
-          </div>
+          </div> */}
         </Container>
       </Box>
     </div>
