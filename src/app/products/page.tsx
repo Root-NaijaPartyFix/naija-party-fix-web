@@ -8,27 +8,28 @@ import Service from "../_components/Product/Service";
 import TrustIndicator from "../_components/Product/TrustIndicator";
 import RecentProject from "../_components/Product/RecentProject";
 import PlanForm from "../_components/Product/PlanForm";
+import CustomerReview from "../_components/Product/CustomerReview";
 
 function ProductPage() {
   return (
-    <div className="to-[#0C2637]/7 bg-gradient-to-b from-[#0C2637]">
+    <div className="-z-50 flex flex-col items-center justify-center gap-[2rem] bg-gradient-to-b from-[#0C2637] via-[#0C2637]/50 to-[#0C2637]/70 py-[7rem]">
       {/* Herosection */}
-      <Box as="div" className={`${Poppins.className}`}>
-        {/* <HeroSection /> */}
 
-        <Container maxWidth={"1380px"} px={"10px"}>
-          {/* Featured Venture */}
+      <div className={`mx-auto max-w-7xl ${Poppins.className}`}>
+        {/* Featured Venture */}
 
-          <Category />
+        <Category />
 
-          <Service />
+        <Service />
 
-          <TrustIndicator />
+        <TrustIndicator />
 
-          <RecentProject />
+        <RecentProject />
 
-          <PlanForm />
-          {/* 
+        <PlanForm />
+
+        <CustomerReview />
+        {/* 
           <div className="mx-auto mt-[1rem] w-[100%] border-0 py-[3rem] sm:mt-[5rem] sm:border-2">
             <div className="flex flex-col items-center justify-center gap-[1rem] bg-transparent">
               <div>
@@ -66,7 +67,7 @@ function ProductPage() {
             </div>
           </div>
 
-          <div className="mx-auto mb-[5rem] mt-[0] w-[100%] border-0 py-[3rem] sm:mt-[5rem] sm:border-2">
+          <div className="mx-auto mb-bom mt-[0] w-[100%] border-0 py-[3rem] sm:mt-[5rem] sm:border-2">
             <div className="flex flex-col items-center justify-center gap-[1rem] bg-transparent">
               <div>
                 <h2 className="text-[1.4rem] font-bold md:text-[1.7rem]">
@@ -102,8 +103,7 @@ function ProductPage() {
               </div>
             </div>
           </div> */}
-        </Container>
-      </Box>
+      </div>
     </div>
   );
 }

@@ -121,14 +121,14 @@ export const ProductDatas = {
       id: 1,
       img: "/images/product/categoryimg1.png",
       title: "Music",
-      text: "Live bands, DJs, and more",
+      text: "Live bands, DJs. we are going to make your event memorable",
     },
     {
       id: 2,
       img: "/images/product/categoryimg1.png",
 
       title: "Catering",
-      text: "Delicious cuisines for every taste",
+      text: "Delicious cuisines for every taste and budget",
     },
     {
       id: 3,
@@ -155,6 +155,32 @@ export const ProductDatas = {
       title: "Gold",
       nums: 30,
       price: "N 1M",
+    },
+  ],
+  Reviews: [
+    {
+      name: "Sarah T.",
+      rating: "⭐⭐⭐",
+      text: "Floral Fantasies transformed our venue beautifully.",
+      img: "/images/Home/img-1.jpg",
+    },
+    {
+      name: "James K.",
+      rating: "⭐⭐⭐⭐",
+      text: "Dreamy Cakes Bakery created the most delicious desserts. So yummy and mouth-watering!",
+      img: "/images/Home/img-2.jpg",
+    },
+    {
+      name: "Habeeb A.",
+      rating: "⭐⭐⭐⭐ ",
+      text: "Habeeb was welcoming and warm in his greeting. He did a wonderful job making the venue look nice.",
+      img: "/images/Home/img-3.jpg",
+    },
+    {
+      name: "Alex P.",
+      rating: "⭐⭐⭐⭐",
+      text: "Alex was amazing at capturing our special moments. He also did a great job organizing our guests.",
+      img: "/images/Home/img-4.jpg",
     },
   ],
 };

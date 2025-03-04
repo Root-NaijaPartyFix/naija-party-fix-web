@@ -113,7 +113,7 @@ export default function MyComponent() {
       <div className="justify-center text-center">
         <h2 className="mb-[2rem] text-[2rem] font-bold">Latest Insights</h2>
 
-        <div className="mb-[5rem] flex h-fit flex-wrap justify-center gap-6">
+        <div className="mb-bom flex h-fit flex-wrap justify-center gap-6">
           <Card num={3} selectedFilter="All" />
         </div>
       </div>

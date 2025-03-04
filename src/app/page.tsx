@@ -17,7 +17,7 @@ import ClickableMap from "./_components/GeoMap";
 export default async function Home() {
   return (
     <div
-      className={`${Poppins.className} -z-50 bg-gradient-to-b from-[#0C2637] to-[#0C2637]/70`}
+      className={`${Poppins.className} -z-50 bg-gradient-to-b from-[#0C2637] to-[#0C2637]/50 pb-[6rem]`}
     >
       {/* Hero */}
 
@@ -30,9 +30,6 @@ export default async function Home() {
           {/* Top Vendors */}
           <TopVendor />
 
-          {/* Book Today section */}
-          {/* <BookToday /> */}
-
           {/* Satisfaction guarantee */}
           <Satisfaction />
 
@@ -42,20 +39,13 @@ export default async function Home() {
           {/* meet our team section */}
           <MeetTeam />
 
-          {/* wecdding vendor ratings */}
-          {/* <VendorRatings />c */}
-
-          {/* interactive Map */}
           {/* <InteractiveMap /> */}
-          <div className="mb-[5rem]">
+          <div className="">
             <h2 className="my-5 mb-6 mt-12 text-center font-clashDisplay text-3xl font-bold tracking-widest text-white">
               Interactive Map
             </h2>
             <ClickableMap />
           </div>
-
-          {/* Latest News */}
-          {/* <LatestNews /> */}
         </Box>
       </div>
     </div>

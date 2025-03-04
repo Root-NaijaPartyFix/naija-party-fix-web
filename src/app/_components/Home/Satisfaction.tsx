@@ -1,10 +1,9 @@
 import Image from "next/image";
 import { HomeDatas } from "public/Datas";
-import ReusableButton from "~/app/_components/Button";
 
 const Satisfaction = () => {
   return (
-    <div className="mb-[5rem] flex flex-col items-center justify-center gap-x-3 px-3 py-7 text-center">
+    <div className="mb-bom flex flex-col items-center justify-center gap-x-3 rounded-md bg-[#162b40] px-3 py-7 text-center">
       <p className="my-2 font-medium text-white md:text-[20px]">Why Soiree</p>
       <h2 className="text-[1.5rem] font-bold text-white sm:text-[1.5rem] md:text-[2rem]">
         {" "}
@@ -30,12 +29,6 @@ const Satisfaction = () => {
           );
         })}
       </div>
-      {/* <div className="my-4 font-bold">
-        Call us now +234-5678-789-90 Or request for a quote
-      </div>
-      <ReusableButton className="bg-brown text-white hover:border-brown hover:bg-white hover:text-brown">
-        REQUEST A QUOTE
-      </ReusableButton> */}
     </div>
   );
 };

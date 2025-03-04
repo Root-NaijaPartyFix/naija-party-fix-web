@@ -3,7 +3,7 @@ import { HomeDatas } from "public/Datas";
 
 const EventPlan = () => {
   return (
-    <div className="mb-[5rem]">
+    <div className="mb-bom">
       <h2 className="my-5 mb-6 mt-12 text-center font-clashDisplay text-3xl font-bold tracking-widest text-white">
         Events Planing Tips
       </h2>

@@ -2,6 +2,7 @@ import { Container } from "@radix-ui/themes";
 import Image from "next/image";
 import React from "react";
 import ReusableButton from "~/app/_components/Button";
+import OurStory from "../_components/AboutUs/Story";
 
 const page = () => {
   const Works = [
@@ -49,7 +50,7 @@ const page = () => {
           <h2 className="text-[1.5rem] font-bold text-[#C1121F] sm:text-[1rem] md:text-[1.5rem]">
             OUR WORK PROCESS
           </h2>
-          <div className="lg:gap-[2.5rem]` m-auto mb-[5rem] flex flex-wrap items-center justify-center sm:gap-6">
+          <div className="lg:gap-[2.5rem]` mb-bom m-auto flex flex-wrap items-center justify-center sm:gap-6">
             {Works.map(({ id, title, text }) => (
               <div
                 key={id}
@@ -63,6 +64,8 @@ const page = () => {
               </div>
             ))}
           </div>
+
+          <OurStory />
 
           {/* Third component */}
           <div className="flex flex-wrap items-center justify-center gap-7 p-[5px] sm:p-6 lg:flex-nowrap">
@@ -133,7 +136,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className="-z-20 mb-[5rem] flex h-[250px] flex-row-reverse p-[5px] sm:h-[300px] sm:px-0 md:h-[400px] lg:h-[600px]">
+          <div className="mb-bom -z-20 flex h-[250px] flex-row-reverse p-[5px] sm:h-[300px] sm:px-0 md:h-[400px] lg:h-[600px]">
             {/* Left Column - Two Images */}
             <div className="flex w-1/3 flex-col gap-4">
               <div className="relative flex-1">
@@ -171,7 +174,7 @@ const page = () => {
           </div>
 
           {/* Testimonoes */}
-          <div className="mb-[5rem] flex flex-col items-center justify-center border pb-5 sm:p-6 sm:pb-0">
+          <div className="mb-bom flex flex-col items-center justify-center border pb-5 sm:p-6 sm:pb-0">
             <h1 className="my-[1rem] text-3xl font-bold">
               Customer&nbsp;<span className="text-[#C1121F]">Reviews</span>
             </h1>

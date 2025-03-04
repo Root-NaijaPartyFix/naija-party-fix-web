@@ -1,6 +1,6 @@
 const LatestNews = () => {
   return (
-    <div className="bg mb-[5rem] rounded-sm bg-[#0C2637] p-[2.5rem]">
+    <div className="bg mb-bom rounded-sm bg-[#0C2637] p-[2.5rem]">
       <div className="flex flex-col items-center justify-center gap-[2rem] text-white">
         <h2 className="text-[1.5rem] font-bold">LATEST NEWS</h2>
         <div className="flex w-full flex-col gap-[1.5rem] sm:flex-row lg:w-[95%]">

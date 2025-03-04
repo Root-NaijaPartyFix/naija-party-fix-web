@@ -29,7 +29,7 @@ const BlogPage = () => {
   return (
     <main>
       {/* hero section */}
-      <div className="relative -z-10 mb-[5rem] h-[60vh] w-full">
+      <div className="mb-bom relative -z-10 h-[60vh] w-full">
         {/* Hero Image */}
         <Image
           src="/images/blog/hero.png"
@@ -70,12 +70,12 @@ const BlogPage = () => {
         </div>
 
         {/*  */}
-        <div className="mb-[5rem] flex flex-wrap justify-center gap-6">
+        <div className="mb-bom flex flex-wrap justify-center gap-6">
           <Card selectedFilter={selectedFilter} />
         </div>
 
         {/*  */}
-        <div className="mx-auto mb-[5rem] flex max-w-4xl flex-col items-center justify-center p-6">
+        <div className="mb-bom mx-auto flex max-w-4xl flex-col items-center justify-center p-6">
           {/* Title */}
           <h1 className="mb-4 text-center text-3xl font-bold text-brown">
             Browse & Shortlist Vendors

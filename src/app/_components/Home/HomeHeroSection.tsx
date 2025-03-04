@@ -1,22 +1,10 @@
 const HeroSection = () => {
   return (
-    <div className="h-[90vh] bg-hero-image bg-cover bg-center bg-no-repeat">
-      <div className="flex h-full flex-col justify-center bg-black/50 pt-16 text-white">
-        <div className="flex h-[60%] flex-col items-center justify-evenly">
-          <p
-            style={{
-              wordSpacing: "5px",
-              letterSpacing: "2px",
-            }}
-            className="font-poppin text-center text-3xl font-bold capitalize"
-          >
-            Let&apos;s plan your next event together
-          </p>
-          {/* <hr color="white" className="w-2/6" />
-          <button className="rounded-md bg-brown px-16 py-3 text-base hover:bg-[var(--primary-hover)]">
-            Get Started
-          </button> */}
-        </div>
+    <div className="mb-bom relative h-[90vh] bg-hero-image bg-cover bg-center bg-no-repeat">
+      <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/50 px-4 text-center text-white">
+        <h1 className="animate-fade-in text-3xl font-bold capitalize tracking-wide sm:text-4xl md:text-5xl">
+          Let&apos;s plan your next event together
+        </h1>
       </div>
     </div>
   );
