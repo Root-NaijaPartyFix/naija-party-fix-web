@@ -55,7 +55,7 @@ const Card = ({ selectedFilter, num }: Props) => {
         .map((data, index) => (
           <div
             key={data.id}
-            className="h-fit max-w-xs rounded-lg border border-gray-200 bg-gray-300 text-left shadow-sm lg:max-w-sm dark:border-gray-700 dark:bg-gray-800"
+            className="mx-auto h-fit w-full rounded-lg border border-gray-200 bg-gray-300 text-left shadow-sm dark:border-gray-700 dark:bg-gray-800"
           >
             <div>
               <Image

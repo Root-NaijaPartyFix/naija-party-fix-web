@@ -184,3 +184,33 @@ export const ProductDatas = {
     },
   ],
 };
+
+export const AboutUsDatas = {
+  Works: [
+    {
+      id: 1,
+      title: "Tell us about your event",
+      text: "We provide specialized services to enhance and support events",
+    },
+    {
+      id: 2,
+      title: "Choose your package",
+      text: "We provide specialized services to enhance and support events",
+    },
+    {
+      id: 3,
+      title: "Meet  your coordinator",
+      text: "We provide specialized services to enhance and support events",
+    },
+    {
+      id: 4,
+      title: "Walk through and polish details",
+      text: "We provide specialized services to enhance and support events",
+    },
+    {
+      id: 5,
+      title: "Put your trust in our team",
+      text: "We provide specialized services to enhance and support events",
+    },
+  ],
+};

@@ -27,35 +27,10 @@ const filterBtn = [
 const BlogPage = () => {
   const [selectedFilter, setSelectedFilter] = useState("All");
   return (
-    <main>
-      {/* hero section */}
-      <div className="mb-bom relative -z-10 h-[60vh] w-full">
-        {/* Hero Image */}
-        <Image
-          src="/images/blog/hero.png"
-          alt="image-hero"
-          className="object-cover"
-          fill
-          priority
-        />
-
-        {/* Overlay Text Content */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/50 px-4 text-center text-white">
-          <h1 className="text-4xl font-bold md:text-6xl">
-            Welcome to Our Blog
-          </h1>
-          <p className="mt-4 max-w-2xl text-lg md:text-xl">
-            Discover the latest trends, tips, and stories to inspire your
-            journey.
-          </p>
-          <button className="hover:bg-brown-600 mt-6 rounded-md bg-brown px-6 py-2 text-white">
-            Explore Now
-          </button>
-        </div>
-      </div>
-      <Container maxWidth={"1380px"} px={"5px"}>
+    <main className="-z-50 bg-gradient-to-b from-[#0C2637] to-[#0C2637]/50 pb-[6rem]">
+      <div className="container mx-auto">
         {/* Child Divs */}
-        <div className="- mb-[2rem] flex gap-4 overflow-x-auto border border-b-gray-200 border-t-gray-200 p-2 shadow-sm sm:justify-center">
+        <div className="mb-[2rem] flex gap-4 overflow-x-auto border border-b-gray-200 border-t-gray-200 p-2 shadow-sm sm:justify-center">
           {filterBtn.map(({ id, text }) => (
             <button
               key={id}
@@ -70,12 +45,12 @@ const BlogPage = () => {
         </div>
 
         {/*  */}
-        <div className="mb-bom flex flex-wrap justify-center gap-6">
+        <div className="[grid-template-columns:repeat(auto-fit, minmax(300px,1fr))] mb-bom grid max-w-7xl gap-6 px-4">
           <Card selectedFilter={selectedFilter} />
         </div>
 
         {/*  */}
-        <div className="mb-bom mx-auto flex max-w-4xl flex-col items-center justify-center p-6">
+        <div className="mx-auto mb-bom flex max-w-4xl flex-col items-center justify-center p-6">
           {/* Title */}
           <h1 className="mb-4 text-center text-3xl font-bold text-brown">
             Browse & Shortlist Vendors
@@ -86,8 +61,7 @@ const BlogPage = () => {
           </div>
 
           {/* Flex Container with Nested Divs */}
-          <div className="flex flex-col items-center justify-center gap-[3rem] sm:flex-row">
-            {/* Child Div 1 */}
+          {/* <div className="flex flex-col items-center justify-center gap-[3rem] sm:flex-row">
             <div className="flex max-w-sm flex-col items-center justify-center gap-3 space-y-2 rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
               <div className="rounded-full bg-[#8A8A8A] p-4">
                 <span className="text-4xl">😊</span>
@@ -138,9 +112,9 @@ const BlogPage = () => {
                 Contact: vendor@gmail.com
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
-      </Container>
+      </div>
     </main>
   );
 };

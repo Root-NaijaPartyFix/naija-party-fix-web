@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-const HeroSection = () => {
+const AboutHero = () => {
   return (
     <section className="relative h-[500px] w-full">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-bg.jpg"
+          src="https://images.unsplash.com/photo-1561912774-79769a0a0a7a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Hero Background"
           fill
           className="h-full w-full object-cover"
@@ -23,7 +23,7 @@ const HeroSection = () => {
             Welcome to Our Platform
           </h1>
           <p className="mt-4 text-lg text-gray-200 md:text-xl">
-            Discover amazing experiences with us.
+            Your trusted partners for creating unforgetable events
           </p>
         </div>
       </div>
@@ -31,4 +31,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default AboutHero;

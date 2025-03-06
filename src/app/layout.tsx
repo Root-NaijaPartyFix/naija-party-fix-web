@@ -7,6 +7,7 @@ import { Theme } from "@radix-ui/themes";
 import { TRPCReactProvider } from "~/trpc/react";
 import Navbar from "./_components/navbar";
 import Footer from "./_components/Footer";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 
 export const metadata: Metadata = {
   title: "Soiree",
@@ -23,13 +24,15 @@ export default function RootLayout({
       <body
         className={`${Poppins.className}${ClashDisplay.className} h-screen w-full font-clashDisplay`}
       >
-        <Theme accentColor="brown" radius="full">
-          <TRPCReactProvider>
-            <Navbar />
-            <div className="">{children}</div>
-            <Footer />
-          </TRPCReactProvider>
-        </Theme>
+        <AppRouterCacheProvider>
+          <Theme accentColor="brown" radius="full">
+            <TRPCReactProvider>
+              <Navbar />
+              <div className="">{children}</div>
+              <Footer />
+            </TRPCReactProvider>
+          </Theme>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );
