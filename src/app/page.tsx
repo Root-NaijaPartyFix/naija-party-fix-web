@@ -2,7 +2,7 @@ import { Box } from "@radix-ui/themes";
 import HeroSection from "~/app/_components/Home/HomeHeroSection";
 import BookToday from "./_components/Home/BookToday";
 import EventCater from "./_components/Home/EventCater";
-import LatestNews from "./_components/Home/LatestNews";
+import LatestNews from "./_components/Blog/LatestNews";
 import MeetTeam from "./_components/Home/MeetTeam";
 import Satisfaction from "./_components/Home/Satisfaction";
 import VendorRatings from "./_components/AboutUs/VendorRatings";
