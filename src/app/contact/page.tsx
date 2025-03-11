@@ -1,13 +1,11 @@
-import { Container } from "@radix-ui/themes";
-import Card from "~/components/Card";
 import ContactForm from "../_components/ContactUs/contactForm";
 import Image from "next/image";
-
+import AccordionTransition from "../_components/ContactUs/Accordion";
 export default function MyComponent() {
   return (
     <div className="-z-50 bg-gradient-to-b from-[#0C2637] to-[#0C2637]/50 py-[5rem]">
-      <div className="mx-auto max-w-[1380px]">
-        <div className="relative mx-auto h-full w-full max-w-[70rem] shadow-lg">
+      <div className="mx-auto max-w-7xl">
+        <div className="relative mx-auto h-full w-full max-w-[70rem] px-0 py-0 shadow-lg md:px-10 md:py-12">
           <div className="absolute inset-0 rounded-lg">
             <Image
               src="https://images.unsplash.com/photo-1530023367847-a683933f4172?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -37,6 +35,18 @@ export default function MyComponent() {
               <ContactForm />
             </div>
           </div>
+        </div>
+        <div className="mt-28 px-4">
+          <div className="mb-[2rem] block">
+            <h2 className="text-left text-xl font-bold text-brown sm:text-2xl lg:text-3xl">
+              FAQS
+            </h2>
+            <p className="mt-1 text-sm text-gray-300">
+              Frequently Asked Questions <br />
+              Here are some common question about NaijaPartyFixs.
+            </p>
+          </div>
+          <AccordionTransition />
         </div>
       </div>
     </div>

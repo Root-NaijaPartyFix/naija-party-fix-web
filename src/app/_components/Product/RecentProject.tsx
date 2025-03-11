@@ -3,7 +3,7 @@ import HoverImage from "../HoverImage";
 
 const RecentProject = () => {
   return (
-    <div className="bg-bgDeep mb-20 rounded-lg px-4 py-12">
+    <div className="mb-20 rounded-lg bg-bgDeep px-4 py-12">
       <h2 className="mb-12 text-center text-[1.5rem] font-bold text-white md:text-[1.8rem]">
         Recent Projects
       </h2>
@@ -55,7 +55,7 @@ const RecentProject = () => {
 
         {/* Right Column - Single Image */}
         <HoverImage
-          src="/images/about/img1.png"
+          src="https://images.unsplash.com/photo-1707097702231-f0b98d7c2703?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Project Image 6"
           className="flex-1"
           text="Weddings and Events"

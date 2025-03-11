@@ -56,6 +56,15 @@ const ContactForm: React.FC = () => {
             margin="normal"
             variant="outlined"
             required
+            sx={{
+              "& .MuiInputLabel-root": { color: "#0C2637" },
+              "& .MuiInputLabel-root.Mui-focused": { color: "#0C2637" },
+              "& .MuiOutlinedInput-root": {
+                "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                  borderColor: "#0C2637",
+                },
+              },
+            }}
           />
 
           <TextField
@@ -67,6 +76,15 @@ const ContactForm: React.FC = () => {
             margin="normal"
             variant="outlined"
             required
+            sx={{
+              "& .MuiInputLabel-root": { color: "#0C2637" },
+              "& .MuiInputLabel-root.Mui-focused": { color: "#0C2637" },
+              "& .MuiOutlinedInput-root": {
+                "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                  borderColor: "#0C2637",
+                },
+              },
+            }}
           />
 
           <TextField
@@ -80,6 +98,15 @@ const ContactForm: React.FC = () => {
             multiline
             rows={4}
             required
+            sx={{
+              "& .MuiInputLabel-root": { color: "#0C2637" },
+              "& .MuiInputLabel-root.Mui-focused": { color: "#0C2637" },
+              "& .MuiOutlinedInput-root": {
+                "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                  borderColor: "#0C2637",
+                },
+              },
+            }}
           />
 
           <Button

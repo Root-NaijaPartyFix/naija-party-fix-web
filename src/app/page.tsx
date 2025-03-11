@@ -1,17 +1,12 @@
 import { Box } from "@radix-ui/themes";
 import HeroSection from "~/app/_components/Home/HomeHeroSection";
-import BookToday from "./_components/Home/BookToday";
 import EventCater from "./_components/Home/EventCater";
-import LatestNews from "./_components/Blog/LatestNews";
+import EventPlan from "./_components/Home/EventPlan";
 import MeetTeam from "./_components/Home/MeetTeam";
 import Satisfaction from "./_components/Home/Satisfaction";
-import VendorRatings from "./_components/AboutUs/VendorRatings";
-import { Poppins } from "./styles/fonts";
 import TopVendor from "./_components/Home/TopVendor";
-import EventPlan from "./_components/Home/EventPlan";
-// import dynamic from "next/dynamic";
-// import InteractiveMap from "./_components/Home/Map";
-import ClickableMap from "./_components/GeoMap";
+import { Poppins } from "./styles/fonts";
+
 // import ClickableMap from "./_components/GeoMap";
 
 export default async function Home() {

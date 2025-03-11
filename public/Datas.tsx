@@ -125,14 +125,14 @@ export const ProductDatas = {
     },
     {
       id: 2,
-      img: "/images/product/categoryimg1.png",
+      img: "https://images.unsplash.com/photo-1518148750009-25b2522df9c2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
       title: "Catering",
       text: "Delicious cuisines for every taste and budget",
     },
     {
       id: 3,
-      img: "/images/product/categoryimg1.png",
+      img: "https://images.unsplash.com/photo-1628571201562-cf216865f739?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Photography",
       text: "Capture every moment with skilled photographers",
     },

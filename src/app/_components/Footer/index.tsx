@@ -5,8 +5,6 @@ import { Button, Flex, Link, Text, TextField } from "@radix-ui/themes";
 import { ClashDisplay } from "~/app/styles/fonts";
 import { FaSquareFacebook, FaTwitter } from "react-icons/fa6";
 
-// import { colors } from "~/app/utils/colors";
-
 type Link = {
   label: string;
   path: string;

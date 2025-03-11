@@ -17,9 +17,9 @@ const OurStory = () => {
       </div>
 
       {/* Content Grid */}
-      <div className="grid h-full w-full grid-cols-1 items-start gap-8 md:grid-cols-2">
+      <div className="relative grid w-full grid-cols-1 items-center gap-8 md:grid-cols-2">
         {/* Image Grid */}
-        <div className="relative grid h-[300px] w-full grid-cols-4 gap-2 md:h-full">
+        <div className="relative grid h-[300px] w-full grid-cols-4 gap-2 overflow-hidden sm:min-h-[500px] md:min-h-full">
           <div className="relative col-span-1 row-span-1">
             <Image
               src="https://images.unsplash.com/photo-1488846156747-f17f59c58e70?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxN3wwfDF8c2VhcmNofDYwfHx3ZWRkaW5nJTIwaGFsbHxlbnwwfHx8fDE3NDEwMTUwNjZ8MA&ixlib=rb-4.0.3&q=85"
@@ -79,7 +79,7 @@ const OurStory = () => {
         </div>
 
         {/* Text Section */}
-        <div className="space-y-6 text-sm text-gray-300">
+        <div className="relative space-y-6 text-sm text-gray-300">
           <p>
             Our Organization is driven by the love for music, dance, and good
             company, brainstorming ideas for an event that will bring people
