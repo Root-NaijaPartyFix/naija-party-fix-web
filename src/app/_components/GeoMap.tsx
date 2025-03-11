@@ -2,115 +2,57 @@
 
 // import {
 //   MapContainer,
+//   TileLayer,
 //   Marker,
 //   Popup,
-//   TileLayer,
 //   useMapEvents,
 // } from "react-leaflet";
 // import "leaflet/dist/leaflet.css";
 // import { useState } from "react";
-// import { type LatLng } from "leaflet";
-// import { Icon } from "leaflet";
+// import L from "leaflet";
 
-// const ClickableMap: React.FC = () => {
-//   const [position, setPosition] = useState<LatLng | null>(null);
+// // Custom icon for the marker
+// const customIcon = new L.Icon({
+//   iconUrl: "https://leafletjs.com/examples/custom-icons/leaf-red.png",
+//   iconSize: [32, 50],
+//   iconAnchor: [16, 32],
+// });
 
-//   const MapClickHandler: React.FC = () => {
+// const DEFAULT_POSITION: [number, number] = [9.082, 8.6753]; // Nigeria's latitude & longitude
+
+// export default function MapComponent() {
+//   const [markers, setMarkers] = useState<{ lat: number; lng: number }[]>([
+//     { lat: DEFAULT_POSITION[0], lng: DEFAULT_POSITION[1] },
+//   ]);
+
+//   function MapClickHandler() {
 //     useMapEvents({
-//       click: (e) => {
-//         setPosition(e.latlng);
-//         console.log("Clicked at:", e.latlng);
+//       click(e) {
+//         setMarkers([...markers, { lat: e.latlng.lat, lng: e.latlng.lng }]);
 //       },
 //     });
 //     return null;
-//   };
-
-//   const customIcon = new Icon({
-//     iconUrl: "/images/Home/location.png",
-//     iconSize: [32, 32],
-//     iconAnchor: [16, 32],
-//     popupAnchor: [0, -22],
-//   });
+//   }
 
 //   return (
 //     <MapContainer
 //       center={[9.082, 8.6753]}
-//       zoom={5}
-//       style={{ height: "500px", width: "100%", zIndex: 1, overflowY: "auto" }}
+//       zoom={6}
+//       style={{ height: "500px", width: "100%" }}
 //     >
 //       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 //       <MapClickHandler />
-//       {position && (
-//         <p>
-//           Clicked at: {position.lat.toFixed(6)}, {position.lng.toFixed(6)}
-//         </p>
-//       )}
-//       <Marker position={[9.082, 8.6753]} icon={customIcon}>
-//         <Popup>📍 You are here: Nigeria</Popup>{" "}
-//       </Marker>
+//       {markers.map((marker, index) => (
+//         <Marker
+//           key={index}
+//           position={[marker.lat, marker.lng]}
+//           icon={customIcon}
+//         >
+//           <Popup>
+//             Latitude: {marker.lat}, Longitude: {marker.lng}
+//           </Popup>
+//         </Marker>
+//       ))}
 //     </MapContainer>
 //   );
-// };
-
-// export default ClickableMap;
-
-"use client";
-
-import {
-  MapContainer,
-  Marker,
-  Popup,
-  TileLayer,
-  useMapEvents,
-} from "react-leaflet";
-import "leaflet/dist/leaflet.css";
-import { useState } from "react";
-import { type LatLng } from "leaflet";
-import { Icon } from "leaflet";
-
-// Move MapClickHandler outside of ClickableMap
-const MapClickHandler: React.FC<{ setPosition: (pos: LatLng) => void }> = ({
-  setPosition,
-}) => {
-  useMapEvents({
-    click: (e) => {
-      setPosition(e.latlng);
-      console.log("Clicked at:", e.latlng);
-    },
-  });
-  return null;
-};
-
-const ClickableMap: React.FC = () => {
-  const [position, setPosition] = useState<LatLng | null>(null);
-
-  const customIcon = new Icon({
-    iconUrl: "/images/Home/location.png",
-    iconSize: [32, 32],
-    iconAnchor: [16, 32],
-    popupAnchor: [0, -22],
-  });
-
-  return (
-    <MapContainer
-      center={[9.082, 8.6753]}
-      zoom={5}
-      style={{ height: "500px", width: "100%", zIndex: 1, overflowY: "auto" }}
-    >
-      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      <MapClickHandler setPosition={setPosition} />
-      {position && (
-        <Marker position={position} icon={customIcon}>
-          <Popup>
-            📍 Clicked at: {position.lat.toFixed(6)}, {position.lng.toFixed(6)}
-          </Popup>
-        </Marker>
-      )}
-      <Marker position={[9.082, 8.6753]} icon={customIcon}>
-        <Popup>📍 You are here: Nigeria</Popup>
-      </Marker>
-    </MapContainer>
-  );
-};
-
-export default ClickableMap;
+// }

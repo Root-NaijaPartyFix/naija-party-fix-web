@@ -36,6 +36,29 @@ export default function MyComponent() {
             </div>
           </div>
         </div>
+        <div className="relative mt-[3rem] h-[400px] w-full">
+          <Image
+            src="/images/Home/map.png"
+            alt="Background"
+            sizes="100%"
+            fill
+            className="absolute inset-0 object-cover"
+          />
+
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
+            <p className="text-lg">Explore Vendor Locations Near You</p>
+
+            <div className="relative mt-4 flex items-center justify-center">
+              <Image
+                src="/images/Home/location.png"
+                alt="Location Icon"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
+            </div>
+          </div>
+        </div>
         <div className="mt-28 px-4">
           <div className="mb-[2rem] ml-0 block sm:ml-2">
             <h2 className="text-center text-xl font-bold text-brown sm:text-left sm:text-2xl lg:text-3xl">
@@ -46,6 +69,7 @@ export default function MyComponent() {
               Here are some common question about NaijaPartyFixs.
             </p>
           </div>
+
           <AccordionTransition />
         </div>
       </div>
