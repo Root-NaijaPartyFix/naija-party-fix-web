@@ -3,7 +3,7 @@ import { HomeDatas } from "public/Datas";
 
 const MeetTeam = () => {
   return (
-    <div className="mb-0 flex flex-col items-center justify-center rounded-md bg-[#162b40] p-10 px-3 py-2 pt-[1.5rem] text-center text-white md:mb-bom">
+    <div className="mb-0 flex flex-col items-center justify-center rounded-md bg-[#162b40] p-10 px-3 py-2 pt-[1.5rem] text-center text-white">
       <p className="font-clashDisplay font-medium md:text-[20px]">
         Meet Incredible People
       </p>
