@@ -39,24 +39,29 @@ export const HomeDatas = {
   ],
   Staffs: [
     {
-      img: "/images/Home/img-1.jpg",
-      position: "Head Chef",
-      name: "Datima",
-    },
-    {
-      img: "/images/Home/img-2.jpg",
+      img: "https://images.unsplash.com/photo-1507152832244-10d45c7eda57?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       position: "Manager",
-      name: "Zee Omale",
+      name: "Ade T",
     },
     {
-      img: "/images/Home/img-3.jpg",
+      img: "https://images.unsplash.com/photo-1473492201326-7c01dd2e596b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       position: "Staff",
-      name: "Pelumi Chris",
+      name: "Habeeb",
     },
     {
-      img: "/images/Home/img-4.jpg",
+      img: "https://images.unsplash.com/photo-1611432579699-484f7990b127?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxN3wwfDF8c2VhcmNofDd8fEZFTUFMRSUyMEhFQURTSE9UfGVufDB8fHx8MTc0MTY5NDc4OXww&ixlib=rb-4.0.3&q=85&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450",
+      position: "Head chef",
+      name: "Zuwera",
+    },
+    {
+      img: "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       position: "Staff",
-      name: "Ola rewanju",
+      name: "Olarewaju",
+    },
+    {
+      img: "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxN3wwfDF8c2VhcmNofDUxNHx8TUFMRSUyMEhFQUQlMjBTSE9UJTIwfGVufDB8fHx8MTc0MTY5NTg2Mnww&ixlib=rb-4.0.3&q=85&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450",
+      position: "Staff",
+      name: "Damiola",
     },
   ],
   HomeRatings: [

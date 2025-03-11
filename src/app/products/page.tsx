@@ -12,7 +12,7 @@ import CustomerReview from "../_components/Product/CustomerReview";
 
 function ProductPage() {
   return (
-    <div className="-z-50 flex flex-col items-center justify-center gap-[2rem] bg-gradient-to-b from-[#0C2637] via-[#0C2637]/50 to-[#0C2637]/70 py-[7rem]">
+    <div className="-z-50 bg-gradient-to-b from-[#0C2637] via-[#0C2637]/50 to-[#0C2637]/70 py-[7rem]">
       {/* Herosection */}
 
       <div className={`mx-auto max-w-7xl ${Poppins.className}`}>
