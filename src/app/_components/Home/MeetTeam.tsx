@@ -16,15 +16,15 @@ const MeetTeam = () => {
             key={i}
             className={`relative flex w-full flex-col items-center justify-center gap-y-[0.3rem] transition-transform duration-300 hover:scale-105 ${i === 1 || i === 3 ? "sm:mt-[5rem]" : ""}`}
           >
-            <div className="relative">
+            <div className="relative h-full rounded-full">
               <Image
                 src={data.img}
-                className="rounded-full object-cover"
+                className="rounded-md object-cover"
                 alt={data.name}
                 height={250}
                 width={250}
               />
-              <div className="absolute inset-0 flex items-center justify-center rounded-full bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 hover:opacity-100">
+              <div className="absolute inset-0 flex items-center justify-center rounded-md bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 hover:opacity-100">
                 <p className="text-lg font-semibold text-white">
                   {data.position}
                 </p>

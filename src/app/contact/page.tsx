@@ -37,11 +37,11 @@ export default function MyComponent() {
           </div>
         </div>
         <div className="mt-28 px-4">
-          <div className="mb-[2rem] block">
-            <h2 className="text-left text-xl font-bold text-brown sm:text-2xl lg:text-3xl">
+          <div className="mb-[2rem] ml-0 block sm:ml-2">
+            <h2 className="text-center text-xl font-bold text-brown sm:text-left sm:text-2xl lg:text-3xl">
               FAQS
             </h2>
-            <p className="mt-1 text-sm text-gray-300">
+            <p className="mt-1 text-center text-sm text-gray-300 sm:text-left">
               Frequently Asked Questions <br />
               Here are some common question about NaijaPartyFixs.
             </p>
