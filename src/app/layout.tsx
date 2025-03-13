@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://naijapartyfix.com.ng/n.png",
-        width: "600",
+        width: "800",
         height: "600",
       },
     ],
