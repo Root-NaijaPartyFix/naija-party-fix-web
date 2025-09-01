@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
                 placeholder="you@mail.com"
                 className="md:w-80"
               ></TextField.Root>
-              <Button className="cursor-pointer">Subscribe Now</Button>
+              <Button style={{ cursor: "pointer" }}>Subscribe Now</Button>
             </div>
           </div>
           {/* About */}

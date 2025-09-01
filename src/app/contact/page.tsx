@@ -26,8 +26,9 @@ export default function MyComponent() {
                   We really love to hear from you
                 </p>
                 <p className="text-sm font-medium text-gray-300">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Tenetur hic sint ipsum dolorem maxime culpa.
+                  Book an appointment. Share your thoughts, questions, or
+                  feedback with us. We&apos;re here to assist you and make your
+                  experience exceptional.
                 </p>
               </div>
             </div>
